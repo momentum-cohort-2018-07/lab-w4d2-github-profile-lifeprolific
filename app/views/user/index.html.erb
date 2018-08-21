@@ -20,19 +20,54 @@
 <div>
   <h2>Organizations</h2>
   <% @orgs_api.each do |org| %>
-    <% org %>
     <a href="<%= org['url'] %>">
-    <img src="<%= org['avatar_url'] %>" width="35" height="35">
-  </a>
+      <img src="<%= org['avatar_url'] %>" width="35" height="35">
+    </a>
   <% end %>
 </div>
-
+<nav>
+  <a href="<%= @user_api['html_url'] %>">
+    Overview
+  </a>
+  <a href="<%= @user_api['html_url'] %>?tab=repositories">
+      Repositories
+      <span>
+        42
+      </span>
+  </a>
+  <a href="<%= @user_api['html_url'] %>?tab=stars">
+    Stars
+    <span>
+      48
+    </span>
+  </a>
+  <a href="<%= @user_api['html_url'] %>?tab=followers">
+    Followers
+    <span>
+      432
+    </span>
+  </a>
+  <a href="<%= @user_api['html_url'] %>?tab=following">
+    Following
+    <span>
+      11
+    </span>
+  </a>
+</nav>
 
 <%= @orgs_api[0] %>
 
 
 
 <h2>@user_api</h2>
-<%= @user_api %>
+<p><%= @user_api %></p>
 <h2>@repos_api</h2>
-<%= @repos_api %>
+<p><%= @repos_api %></p>
+<h2>@orgs_api<h2>
+<p><%= @orgs_api %></p>
+<h2>@starred_api<h2>
+<p><%= @starred_api %></p>
+<h2>@followers_api<h2>
+<p><%= @followers_api %></p>
+<h2>@following_api<h2>
+<p><%= @following_api %></p>

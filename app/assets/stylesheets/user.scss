@@ -5,7 +5,10 @@ img {
   max-width: 100%;
 }
 .header, .footer {
-  background-color: gray
+  background-color: gray;
+}
+.header *, .footer * {
+  display: inline-block
 }
 .middle {
   overflow: auto;
@@ -17,4 +20,10 @@ img {
 .main {
   float: right;
   width: 70%;
+}
+ul {
+  list-style: none
+}
+li {
+  margin: 1rem
 }

@@ -1,0 +1,29 @@
+// Place all the styles related to the User controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+img {
+  max-width: 100%;
+}
+.header, .footer {
+  background-color: gray;
+}
+.header *, .footer * {
+  display: inline-block
+}
+.middle {
+  overflow: auto;
+}
+.profile_info {
+  float: left;
+  width: 25%;
+}
+.main {
+  float: right;
+  width: 70%;
+}
+ul {
+  list-style: none
+}
+li {
+  margin: 1rem
+}
